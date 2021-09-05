@@ -1,6 +1,17 @@
-# Ingenieria_de_software_2021-Grupo_6
+# Universidad Tecnologica Nacional - Facultad Regional de Córdoba - Ingenieria De Software 2021 - Curso:4K1 - Grupo 6
 
-Ingeniería_de_software_2021-Grupo_6
+## Integrantes del Grupo
+| Nombre |
+| :----: |
+|Facundo Paz Fessia | 
+|Maximiliano Saleh |
+|Santiago Landa Valle |
+|Leonardo Pozzo | 
+|Rodrigo Tosco | 
+|Joaquin Giron Pignol | 
+
+## Diseño del Repositorio
+***Ingeniería_de_software_2021-Grupo_6***
 - Trabajos_practicos
 	- Trabajo_practico_1_Dinamica_del_Manifiesto_Agil-E
 	- Trabajo_practico_2_Requerimientos_Agiles_User_Stories-NE
