@@ -29,10 +29,10 @@ Ingeniería_de_software_2021-Grupo_6
 
 | Nombre del ítem de Configuración     | Regla de Nombrado | Ubicación Física     |
 |     :----:       		       |    :----:         |       :----:         |
-|    Documentos de Trabajos Prácticos preliminares  | Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6_P.doc  | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/\<DirectorioDeTrabajoPractico\>   |
-| Documento final de trabajos prácticos   |     Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6.pdf    | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/\<DirectorioDeTrabajoPractico\>     |
-| Notas de cambios pendientes del trabajo | Anotaciones_TP\<NumeroTrabajoPractico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/\<DirectorioDeTrabajoTeoricos\> |
-|Documento final de trabajos teóricos | \<aaaa\>_4K\<n\>_Grupo\<nn\>_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/\<DirectorioDeTrabajoTeorico\>| 
+|    Documentos de Trabajos Prácticos preliminares  | Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6_P.doc  | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>   |
+| Documento final de trabajos prácticos   |     Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6.pdf    | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>     |
+| Notas de cambios pendientes del trabajo | Anotaciones_TP\<NumeroTrabajoPractico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\> |
+|Documento final de trabajos teóricos | \<aaaa\>_4K\<n\>_Grupo\<nn\>_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>| 
 |Notas de clases| \<aaaa\>-\<mm\>-\<dd\>_\<Nombre\>.[jpg/txt/md/doc]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_clases/Notas| 
 |Presentaciones de clases | \<aaaa\>-\<mm\>-\<dd\>_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Presentaciones|
 
