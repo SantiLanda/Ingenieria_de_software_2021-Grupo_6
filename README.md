@@ -46,15 +46,15 @@ Ingeniería_de_software_2021-Grupo_6
 |\<NumeroTrabajoTeorico\> |Número de trabajo teórico|
 |\<NombreTrabajoTeorico\> |Nombre del trabajo teórico|
 |\<DirectorioDeTrabajoPractico\>| Es el nombre del directorio del trabajo práctico correspondiente|
-|\<DirectorioDeTrabajoTeorico\> |Es el nombre del directorio del trabajo práctico correspondiente |
+|\<DirectorioDeTrabajoTeorico\> |Es el nombre del directorio del trabajo teórico correspondiente |
 |P |Preliminar|
 |\<aaaa\> | Año en formato de 4 dígitos, como 2021|
 |\<mm\> | Mes en formato de 2 dígitos |
 |\<dd\> | Dia del mes correspondiente|
 |\<Nombre\> | Nombre del alumno responsable de las notas |
-|n | Número del curso con 1 dígito, como 1, 2, 3 o 4 |
-|nn | Número del Grupo con 2 dígitos, como 02 |
-|Tema_abordado | Nombre del tema reemplazando espacios con "\_", como "No_Silver_Bullet"|
+|\<n\> | Número del curso con 1 dígito, como 1, 2, 3 o 4 |
+|\<nn\> | Número del Grupo con 2 dígitos, como 02 |
+|\<Tema_abordado\> | Nombre del tema reemplazando espacios con "\_", como "No_Silver_Bullet"|
 
 
 ## Regla para determinar la linea Base
