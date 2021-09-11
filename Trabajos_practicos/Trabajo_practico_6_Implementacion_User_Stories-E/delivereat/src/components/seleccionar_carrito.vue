@@ -31,7 +31,7 @@ export default {
 
   methods: {
     confirmarCarrito: function () {
-      this.$router.push({ name: 'Finalizar pedido', params: { carrito: this.selectCarrito() } })
+      this.$router.push({ name: 'Finalizar pedido', params: { carrito: JSON.stringify(this.selectCarrito()) } })
     },
 
     selectCarrito: function () {

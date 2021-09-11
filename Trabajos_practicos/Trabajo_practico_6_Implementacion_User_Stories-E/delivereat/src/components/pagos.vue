@@ -1,13 +1,16 @@
 <template>
-  <div>Pago: {{ carrito.id }}</div>
+  <div>Pago: {{ carro.id }}</div>
 </template>
 
 <script>
 export default {
   mounted () {
-    console.log(this.$props)
-    console.log(this.carrito)
+    this.carro = JSON.parse(this.carrito)
   },
+
+  data: () => ({
+    carro: 0
+  }),
   props: ['carrito']
 }
 </script>
