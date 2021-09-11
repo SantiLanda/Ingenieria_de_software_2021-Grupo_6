@@ -1,17 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <DeliverEatAppNavbar></DeliverEatAppNavbar>
   </div>
+  
+  <div>
+    <router-view/>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DeliverEatAppNavbar from './components/DeliverEatAppNavbar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DeliverEatAppNavbar
   }
 }
 </script>
@@ -24,5 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #80FFDB;
 }
 </style>
