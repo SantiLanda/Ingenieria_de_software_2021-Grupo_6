@@ -45,6 +45,13 @@
       <input type="radio" id="efectivo" name="pago" value="efectivo" />
       <label for="efectivo">efectivo</label>
     </div>
+    <div class="row p-2">
+      <div class="col-sm-4 offset-sm-4">
+      <button type="button" class="btn btn-primary btn-lg" id="siguienteapago" @click="mostrarSiguienteDiv()">
+      Clickeame para seguir
+      </button>
+    </div>
+    </div>
     <div id="pagotarjeta">
       <div id="fechapararecibir" v-if="this.modo == 2">
         <input
@@ -55,6 +62,9 @@
           min="2021-09-11"
           max="2021-09-21"
         />
+        <button type="button" class="btn btn-primary btn-lg" id="siguienteapago" @click="mostrarSiguienteDiv()">
+      Clickeame para seguir
+      </button>
       </div>
     </div>
     <div id="pagoefectivo"></div>
@@ -62,6 +72,8 @@
 </template>
 
 <script>
+import validarTarjeta from '../assets/validarVisa.js'
+
 export default {
   mounted () {
     this.carro = JSON.parse(this.carrito)
