@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bar">
-      <img src="../../../Logo/DeliverEats.png" alt="DeliverEat Logo" style="width:15%;">
+      <img src="../../../Recursos/Logo/DeliverEats.png" alt="DeliverEat Logo" style="width:15%;">
     </div>
     <div class="button-panel">
       <button @click="showContact = !showContact">Contacto</button>

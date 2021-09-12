@@ -8,7 +8,7 @@ function separarValores(tarjeta) {
     numTarjeta = tarjeta.numTarjeta;
     cvc = tarjeta.cvc;
     mesVencimiento = tarjeta.mesVencimiento;
-    diaVencimiento = tarjeta.diaVencimiento;
+    añoVencimiento = tarjeta.añoVencimiento;
     titular = tarjeta.titular;
 }
 
@@ -53,3 +53,5 @@ function validarTarjeta(tarjeta) {
         return 0
     }
 }
+
+export { validarTarjeta }
