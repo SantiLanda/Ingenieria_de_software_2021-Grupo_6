@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <div class="container-fluid" style="padding:0">
+        <nav class="navbar navbar-light" style="background-color: aquamarine">
+            <h1>DeliverEats</h1>
+        </nav>
+
+        <div id="form" class="container" style="border: 1px solid grey; border-radius: 5px;">
+            <div id="divdireccion" style="border: 1px solid grey; border-radius: 5px;">
+            <h2>Dirección</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="calle">Calle: </label>
+                </div>
+                <div class="col">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="numero">Número: </label>
+                </div>
+                <div class="col">
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="ciudad">Ciudad: </label>
+                </div>
+                <div class="col">
+                    <select name="ciudades" id="ciudades">
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Carlos Paz">Carlos Paz</option>
+                        <option value="Cosquín">Cosquín</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="referencia">Referencia:</label>
+                </div>
+                <div class="col"> <textarea name="referencia" id="referencia" cols="30" rows="5"></textarea></div>
+            </div>
+
+            </div>
+
+
+
+
+            <div id="seleccionpago" style="border: 1px grey solid; border-radius: 5px;">
+                <h3>¿Cuándo quiere recibirlo?</h3>
+                <div id="cajarecibir" style="display: flex; height: 10em; align-items: stretch; align-content: center;">
+                    <div style="display:flex;background-color: aquamarine; width: 50%; border-radius: 5px;">Lo antes posible</div>
+                    <div style="display: flex; background-color: purple; width: 50%; border-radius: 5px;">
+                        
+                        <div>
+                            <label for="fecha">Ingrese fecha:</label>
+                            <br>
+                            <input type="date">
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="pagoenefectivo"  style="border: 1px grey solid; border-radius: 5px;">
+                <h2>Pago en efectivo</h2>
+                <label for="total" id="total">Total: $</label>
+                <label for="total" id="totalefectivo">500</label>
+
+                <h3>¿Con cuánto vas a pagar?</h3>
+                <h2 style="display:inline">$</h2>
+                <input type="number">
+            </div>
+
+            <div id="pagotarjeta"  style="border: 1px grey solid; border-radius: 5px;">
+                <h2>Pago con tarjeta VISA</h2>
+
+                <div class="row">
+                    <div class="col">Número de tarjeta: </div>
+                    <div class="col">
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">Nombre: </div>
+                    <div class="col">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">Apellido: </div>
+                    <div class="col">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">Fecha de vencimiento</div>
+                    <div class="col">
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">CVC</div>
+                    <div class="col">
+                        <input type="number">
+                    </div>
+                </div>
+            </div>
+
+            <button id="botonconfirmacion">Confirmar</button>
+
+            <div id="pantallaconfirmado"  style="border: 1px grey solid; border-radius: 5px;">
+                <h2>Pedido ordenado correctamente</h2>
+                <h3>El courier está buscando tu pedido</h3>
+            </div>
+        </div>
+
+        
+    </div>
+  </body>
+</html>
