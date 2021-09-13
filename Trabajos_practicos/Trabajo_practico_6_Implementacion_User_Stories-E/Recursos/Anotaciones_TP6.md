@@ -1,7 +1,7 @@
 - [] Validaciones
     - [X] Minimo 3 caracteres de largo
     - [X] Menor a 280 caracteres
-    - [ ] Todo numérico
+    - [X] Todo numérico
     - [X] Que comience con dos dígitos particulares (lo de la tarjeta)
 
 - [X] Respecto a tarjetas: Armar JSON de tarjeta VISA válida, 
@@ -11,10 +11,10 @@
 - [X] Falta la última interfaz 
 - [X] Agregar todos los campos necesarios
 - [X] Aplicar centrado y diseño con bootstrap
-- [ ] Agregar SVG de botón atrás y otros íconos
+- [X] Agregar botón atrás
 - [X] Aplicar paleta de colores
 - [X] Buscar fuentes para buenas prácticas de programación
-- [ ] Agregar documentos de buenas prácticas
+- [X] Agregar documentos de buenas prácticas
 
 - [X] Escribir texto de pantalla de errores (Son los labels)
 - [X] Probar utilizando distintos flujos
