@@ -14,10 +14,10 @@ export default {
   props: {
     msg: String
   },
-   methods:{
-   sendToCarrito(){
-   this.$router.push('/carrito'); 
-      }
+  methods: {
+    sendToCarrito () {
+      this.$router.push('/carrito')
+    }
   }
 }
 </script>

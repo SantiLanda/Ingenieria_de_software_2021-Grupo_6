@@ -84,8 +84,8 @@
                 <h3>¿Con cuánto vas a pagar?</h3>
                 <label for="monto"><h2>$</h2></label>
                 <input id="monto" type="number" maxlength="280" @input="updateValues()">
-                <label for="monto" id="labelMonto" class="hidden red">Este campo se debe completar</label>
-                <label for="monto" id="labelMonto2" class="hidden red">Este monto no puede ser menor al precio total</label>
+              <div class="col align-items-center"><label for="monto" id="labelMonto" class="hidden red">Este campo se debe completar</label></div>
+              <div class="col"><label for="monto" id="labelMonto2" class="hidden red">Este monto no puede ser menor al precio total</label></div>
             </div>
             <div id="pagotarjeta" class="p-3 margin" style="border: 5px grey solid; border-radius: 5px;" v-if="this.pago == 2">
                 <h2>Pago con tarjeta VISA</h2>
@@ -111,6 +111,7 @@
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
                         <input id="apellidoTitular" type="text" class="form-control" maxlength="280" @input="updateValues()">
+                        <label for="apellidoTitular" id="labelapellidoTitular" class="hidden red">Este campo se debe completar</label>
                     </div>
                 </div>
                 <div class="row align-items-center p-2">
@@ -132,6 +133,7 @@
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
                         <input id="cvc" type="number" class="form-control" maxlength="280" @input="updateValues()">
+                        <label for="cvc" id="labelCvc" class="hidden red">Este campo se debe completar</label>
                     </div>
                 </div>
               <div class="alert alert-danger hidden" id="labelTarjetaInvalida" >Ingrese una tarjeta valida</div>
@@ -146,7 +148,7 @@
 </template>
 
 <script>
-import validarTarjeta from '../assets/validarVisa.js'
+import { validarTarjeta } from '../assets/validarVisa.js'
 export default {
   mounted () {
     this.carro = JSON.parse(this.carrito)
@@ -167,20 +169,18 @@ export default {
     recibir: 1,
     fechaRecibir: '',
     horaRecibir: '',
-    monto: 0,
+    monto: '',
     pago: 1,
     numTarjeta: '',
     nombreTitular: '',
     apellidoTitular: '',
-    mesVto: 0,
-    añoVto: 0,
-    cvc: 0
+    mesVto: '',
+    añoVto: '',
+    cvc: '',
+    tarjeta: { numTarjeta: '', cvc: '', mesVencimiento: '', añoVencimiento: '', titular: '' }
   }),
   props: ['carrito'],
   methods: {
-    mostrarSiguienteDiv: function () {
-      this.modo += 1
-    },
     updateValues: function () {
       this.calle = document.querySelector('input[id="calle"]').value
       this.numero = document.getElementById('numero').value
@@ -189,15 +189,23 @@ export default {
       this.fechaRecibir = document.getElementById('controlFecha').value
       this.horaRecibir = document.getElementById('controlHora').value
       if (this.pago === 1) {
-        this.monto = document.getElementById('monto').value
+        this.monto = String(document.getElementById('monto').value)
+        console.log(this.monto)
+        console.log(String(document.getElementById('monto').value))
+        console.log(String(document.getElementById('monto').value).length)
       }
       if (this.pago === 2) {
-        this.numTarjeta = document.getElementById('numTarjeta').value
+        this.numTarjeta = String(document.getElementById('numTarjeta').value)
         this.nombreTitular = document.getElementById('nombreTitular').value
         this.apellidoTitular = document.getElementById('apellidoTitular').value
-        this.mesVto = document.getElementById('mesVto').value
-        this.añoVto = document.getElementById('añoVto').value
-        this.cvc = document.getElementById('cvc').value
+        this.mesVto = String(document.getElementById('mesVto').value)
+        this.añoVto = String(document.getElementById('añoVto').value)
+        this.cvc = String(document.getElementById('cvc').value)
+        this.tarjeta.numTarjeta = this.numTarjeta
+        this.tarjeta.cvc = this.cvc
+        this.tarjeta.mesVencimiento = this.mesVto
+        this.tarjeta.añoVencimiento = this.añoVto
+        this.tarjeta.titular = this.nombreTitular + ' ' + this.apellidoTitular
       }
     },
     cambiarPago: function () {
@@ -254,8 +262,6 @@ export default {
       } return 0
     },
     validarBoton: function () {
-      console.log(this.calle)
-      console.log(this.calle.length)
       if (this.validarTexto(this.calle) === -1) {
         document.getElementById('labelCalle').setAttribute('class', 'red')
       } else {
@@ -272,7 +278,10 @@ export default {
         document.getElementById('labelReferencia').setAttribute('class', 'hidden')
       }
       if (this.pago === 1) {
-        if (this.validarTexto(this.monto) === -1) {
+        console.log(this.validarTexto(this.monto))
+        console.log(this.monto)
+        console.log(this.monto.length)
+        if (this.monto === '') {
           document.getElementById('labelMonto').setAttribute('class', 'red')
         } else {
           document.getElementById('labelMonto').setAttribute('class', 'hidden')
@@ -283,15 +292,36 @@ export default {
           document.getElementById('labelMonto2').setAttribute('class', 'hidden')
         }
       } else if (this.pago === 2) {
-        var titular = this.nombreTitular + ' ' + this.apellidoTitular
-        var tarjeta = { numTarjeta: this.numTarjeta, cvc: this.cvc, mesVencimiento: this.mesVto, añoVencimiento: this.añoVto, titular: titular }
-        if (validarTarjeta(tarjeta) === -1) {
-          document.getElementById('labelNumeroTarjeta').setAttribute('class', 'red')
-        } else if (validarTarjeta(tarjeta) === -2) {
+        if (this.validarTexto(this.numTarjeta) === -1) {
+          document.getElementById('labelnumTarjeta').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelnumTarjeta').setAttribute('class', 'hidden')
+        }
+        console.log(this.validarTexto(this.cvc))
+        console.log(this.cvc)
+        console.log(this.cvc.length)
+        if (this.validarTexto(this.cvc) === -1) {
+          document.getElementById('labelCvc').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelCvc').setAttribute('class', 'hidden')
+        }
+        if (this.validarTexto(this.nombreTitular) === -1) {
+          document.getElementById('labelnombreTitular').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelnombreTitular').setAttribute('class', 'hidden')
+        }
+        if (this.validarTexto(this.apellidoTitular) === -1) {
+          document.getElementById('labelapellidoTitular').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelapellidoTitular').setAttribute('class', 'hidden')
+        }
+        if (validarTarjeta(this.tarjeta) === -1) {
+          document.getElementById('labelnumTarjeta2').setAttribute('class', 'red')
+        } else if (validarTarjeta(this.tarjeta) === -2) {
           document.getElementById('labelTarjetaInvalida').setAttribute('class', 'alert alert-danger')
         } else {
           document.getElementById('labelTarjetaInvalida').setAttribute('class', 'hidden')
-          document.getElementById('labelNumeroTarjeta').setAttribute('class', 'hidden')
+          document.getElementById('labelnumTarjeta2').setAttribute('class', 'hidden')
         }
       }
     }
@@ -306,7 +336,7 @@ export default {
    margin-bottom:10px
 }
 .hidden{
-   visibility:hidden;
+   display:none;
 }
 .red{
    color:red;
