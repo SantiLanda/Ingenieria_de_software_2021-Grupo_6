@@ -27,9 +27,9 @@ export default {
       {
         id: 0,
         items: [
-          { producto: 'Hamburguesa', precio: 500, cantidad: 2 },
-          { producto: 'Helado', precio: 100, cantidad: 4 },
-          { producto: 'Gaseosa', precio: 150, cantidad: 1 }
+          { id: 0, producto: 'Hamburguesa', precio: 500, cantidad: 2 },
+          { id: 1, producto: 'Helado', precio: 100, cantidad: 4 },
+          { id: 2, producto: 'Gaseosa', precio: 150, cantidad: 1 }
         ]
       }
     ]

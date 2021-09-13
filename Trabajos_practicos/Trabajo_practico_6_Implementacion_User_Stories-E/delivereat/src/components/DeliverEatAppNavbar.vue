@@ -4,21 +4,7 @@
       <img src="../../../Recursos/Logo/DeliverEats.png" alt="DeliverEat Logo" style="width:15%;">
     </div>
     <div class="button-panel">
-      <button @click="showContact = !showContact">Contacto</button>
-    </div>
-    <div v-if="showContact">
-      <table class="contact-table">
-        <tr>
-          <th>Nombre</th>
-          <th>Legajo</th>
-          <th>Mail</th>
-        </tr>
-        <tr v-for="(contact, id) in data" :key="id">
-          <td>{{ contact.name }}</td>
-          <td>{{ contact.no }}</td>
-          <td>{{ contact.mail }}</td>
-        </tr>
-      </table>
+      <button @click="this.return()">Volver</button>
     </div>
   </div>
 </template>
@@ -31,6 +17,11 @@ export default {
   props: {
     data: {
       type: Array
+    }
+  },
+  methods: {
+    return: function () {
+      this.$router.push({ name: 'Confirmar carrito' })
     }
   },
   name: 'delivereatnavbar'

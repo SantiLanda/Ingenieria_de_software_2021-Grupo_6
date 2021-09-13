@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="DeliverEat logo" src="../../../Recursos/Logo/DeliverEats.png" style="width:20rem; heigth:20rem">
     <HelloWorld msg="Bienvenida/o a DeliverEat!"/>
   </div>
 </template>

@@ -3,7 +3,9 @@ var cvc
 var mesVencimiento
 var añoVencimiento
 var titular
-var tarjVal = [{ numTarjeta: '4555555555555555', cvc: '123', mesVencimiento: '06', añoVencimiento: '24', titular: 'Juan Perez' }]
+var tarjVal = [{ numTarjeta: '4555555555555555', cvc: '123', mesVencimiento: '06', añoVencimiento: '24', titular: 'Juan Perez' }, 
+{numTarjeta: '4564564564564567', cvc: '122', mesVencimiento: '07', añoVencimiento: '22', titular: 'Ricardo Lopez'},
+{numTarjeta: '4000100110011001', cvc: '252', mesVencimiento: '10', añoVencimiento: '25', titular: 'Juana Suarez'}]
 
 function separarValores (tarjeta) {
   numTarjeta = tarjeta.numTarjeta
@@ -20,6 +22,12 @@ function validarNumero (numero) {
   if (numero[0] !== '4') {
     return -1
   }
+  for (var i = 0; i < tarjVal.length; i++) {
+    if (numero === tarjVal[i].numTarjeta) {
+      return -2
+    }
+  }
+
 }
 
 function validarCvc (codigo) {
@@ -28,17 +36,25 @@ function validarCvc (codigo) {
       return true
     }
   }
+  return false
 }
 
 function validarVto (mes, año) {
-  añoVencimiento = año
-  mesVencimiento = mes
-  return 0
+  for (var i = 0; i < tarjVal.length; i++) {
+    if (mes === tarjVal[i].mesVencimiento && año === tarjVal[i].añoVencimiento) {
+      return true
+    }
+  }
+  return false
 }
 
 function validarTitular (nombre) {
-  titular = nombre
-  return 0
+  for (var i = 0; i < tarjVal.length; i++) {
+    if (nombre === tarjVal[i].titular) {
+      return true
+    }
+  }
+  return false
 }
 
 function validarTarjeta (tarjeta) {
