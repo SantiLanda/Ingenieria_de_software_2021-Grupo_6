@@ -10,7 +10,8 @@
                 </div>
                 <div class="col-1" style="text-align: right"></div>
                 <div class="col">
-                    <input type="text" class="form-control" @input="updateValues()">
+                    <input id="calle" type="text" class="form-control" maxlength="280" value="" @input="updateValues()">
+                    <label for="calle" id="labelCalle" class="hidden red">Este campo se debe completar</label>
                 </div>
             </div>
 
@@ -20,7 +21,8 @@
                 </div>
                 <div class="col-1" style="text-align: right"></div>
                 <div class="col">
-                    <input type="number" class="form-control" @input="updateValues()">
+                    <input id="numero" type="number" class="form-control" maxlength="280" @input="updateValues()">
+                    <label for="numero" id="labelNumero" class="hidden red">Este campo se debe completar</label>
                 </div>
             </div>
 
@@ -43,7 +45,9 @@
                     <label for="referencia" class="form-label" style="text-align: right">Referencia:</label>
                 </div>
                 <div class="col-1" style="text-align: right"></div>
-                <div class="col align-items-left" > <textarea class="form-control" name="referencia" id="referencia" cols="30" rows="5" @input="updateValues()"></textarea></div>
+                <div class="col align-items-left" > <textarea class="form-control" name="referencia" id="referencia" cols="30" rows="5" maxlength="280" @input="updateValues()"></textarea>
+                <label for="referencia" id="labelReferencia" class="hidden red">Este campo se debe completar</label>
+                </div>
             </div>
             </div>
             <div id="opcionesentrega" class="p-3 margin" style="border: 5px grey solid; border-radius: 5px;">
@@ -79,7 +83,9 @@
                 <label for="total" id="totalefectivo" class="form-label"><h2>500</h2></label>
                 <h3>¿Con cuánto vas a pagar?</h3>
                 <label for="monto"><h2>$</h2></label>
-                <input id="monto" type="number" @input="updateValues()">
+                <input id="monto" type="number" maxlength="280" @input="updateValues()">
+                <label for="monto" id="labelMonto" class="hidden red">Este campo se debe completar</label>
+                <label for="monto" id="labelMonto2" class="hidden red">Este monto no puede ser menor al precio total</label>
             </div>
             <div id="pagotarjeta" class="p-3 margin" style="border: 5px grey solid; border-radius: 5px;" v-if="this.pago == 2">
                 <h2>Pago con tarjeta VISA</h2>
@@ -87,21 +93,24 @@
                     <div class="col" style="text-align: right">Número de tarjeta: </div>
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
-                        <input type="number" class="form-control">
+                        <input id="numTarjeta" type="number" maxlength="19" class="form-control">
+                        <label for="numTarjeta" id="labelnumTarjeta" class="hidden red">Este campo se debe completar</label>
+                        <label for="numTarjeta" id="labelnumTarjeta2" class="hidden red">Solo se aceptan pagos con tarjeta VISA</label>
                     </div>
                 </div>
                 <div class="row align-items-center p-2">
                     <div class="col" style="text-align: right">Nombre: </div>
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
-                        <input type="text" class="form-control" @input="updateValues()">
+                        <input id="nombreTitular" type="text" class="form-control" maxlength="280" @input="updateValues()">
+                        <label for="nombreTitular" id="labelnombreTitular" class="hidden red">Este campo se debe completar</label>
                     </div>
                 </div>
                 <div class="row align-items-center p-2">
                     <div class="col" style="text-align: right">Apellido: </div>
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
-                        <input type="text" class="form-control" @input="updateValues()">
+                        <input id="apellidoTitular" type="text" class="form-control" maxlength="280" @input="updateValues()">
                     </div>
                 </div>
                 <div class="row align-items-center p-2">
@@ -122,11 +131,12 @@
                     <div class="col" style="text-align: right">CVC:</div>
                     <div class="col-1" style="text-align: right"></div>
                     <div class="col">
-                        <input type="number" class="form-control" @input="updateValues()">
+                        <input id="cvc" type="number" class="form-control" maxlength="280" @input="updateValues()">
                     </div>
                 </div>
+              <div class="alert alert-danger hidden" id="labelTarjetaInvalida" >Ingrese una tarjeta valida</div>
             </div>
-            <button id="botonconfirmacion"  class="btn btn-primary" style="margin:0 auto; display:block">Confirmar</button>
+            <button id="botonconfirmacion"  class="btn btn-primary" style="margin:0 auto; display:block" @click="validarBoton()">Confirmar</button>
             <div id="pantallaconfirmado"  style="border: 5px grey solid; border-radius: 5px;">
                 <h2>Pedido ordenado correctamente</h2>
                 <h3>El courier está buscando tu pedido</h3>
@@ -136,6 +146,7 @@
 </template>
 
 <script>
+import validarTarjeta from '../assets/validarVisa.js'
 export default {
   mounted () {
     this.carro = JSON.parse(this.carrito)
@@ -145,6 +156,7 @@ export default {
   },
 
   data: () => ({
+    montoTotal: 0,
     carro: 0,
     fechaMax: 0,
     fechaMin: 0,
@@ -152,11 +164,17 @@ export default {
     numero: 0,
     ciudad: '',
     referencia: '',
-    modo: 0,
-    pago: 1,
     recibir: 1,
+    fechaRecibir: '',
+    horaRecibir: '',
+    monto: 0,
+    pago: 1,
+    numTarjeta: '',
+    nombreTitular: '',
+    apellidoTitular: '',
     mesVto: 0,
-    añoVto: 0
+    añoVto: 0,
+    cvc: 0
   }),
   props: ['carrito'],
   methods: {
@@ -164,12 +182,23 @@ export default {
       this.modo += 1
     },
     updateValues: function () {
-      this.calle = document.getElementById('calle').value
+      this.calle = document.querySelector('input[id="calle"]').value
       this.numero = document.getElementById('numero').value
-      this.ciudad = document.getElementById('ciudad').value
+      this.ciudad = document.getElementById('ciudades').value
       this.referencia = document.getElementById('referencia').value
-      this.mesVto = document.getElementById('mesVto').value
-      this.añoVto = document.getElementById('añoVto').value
+      this.fechaRecibir = document.getElementById('controlFecha').value
+      this.horaRecibir = document.getElementById('controlHora').value
+      if (this.pago === 1) {
+        this.monto = document.getElementById('monto').value
+      }
+      if (this.pago === 2) {
+        this.numTarjeta = document.getElementById('numTarjeta').value
+        this.nombreTitular = document.getElementById('nombreTitular').value
+        this.apellidoTitular = document.getElementById('apellidoTitular').value
+        this.mesVto = document.getElementById('mesVto').value
+        this.añoVto = document.getElementById('añoVto').value
+        this.cvc = document.getElementById('cvc').value
+      }
     },
     cambiarPago: function () {
       var value = document.querySelector('input[name="pagoseleccionado"]:checked').value
@@ -201,12 +230,70 @@ export default {
       var tomorrowD = String(tomorrow.getDate()).padStart(2, '0')
       var tomorrowM = String(tomorrow.getMonth() + 1).padStart(2, '0')
       var tomorrowY = tomorrow.getFullYear()
+      var hora = String(today.getHours()) + ':' + String(today.getMinutes())
       today = yyyy + '-' + mm + '-' + dd
       tomorrow = tomorrowY + '-' + tomorrowM + '-' + tomorrowD
       this.fechaMin = today
       this.fechaMax = tomorrow
       document.getElementById('controlFecha').setAttribute('min', this.fechaMin)
+      document.getElementById('controlFecha').setAttribute('value', this.fechaMin)
       document.getElementById('controlFecha').setAttribute('max', this.fechaMax)
+      document.getElementById('controlHora').setAttribute('value', hora)
+    },
+    validarTexto: function (cad) {
+      var min = 3
+      if (cad.length < min) {
+        return -1
+      } else {
+        return 0
+      }
+    },
+    validarMonto: function () {
+      if (this.montoTotal > parseInt(this.monto)) {
+        return -1
+      } return 0
+    },
+    validarBoton: function () {
+      console.log(this.calle)
+      console.log(this.calle.length)
+      if (this.validarTexto(this.calle) === -1) {
+        document.getElementById('labelCalle').setAttribute('class', 'red')
+      } else {
+        document.getElementById('labelCalle').setAttribute('class', 'hidden')
+      }
+      if (this.validarTexto(this.numero) === -1) {
+        document.getElementById('labelNumero').setAttribute('class', 'red')
+      } else {
+        document.getElementById('labelNumero').setAttribute('class', 'hidden')
+      }
+      if (this.validarTexto(this.referencia) === -1) {
+        document.getElementById('labelReferencia').setAttribute('class', 'red')
+      } else {
+        document.getElementById('labelReferencia').setAttribute('class', 'hidden')
+      }
+      if (this.pago === 1) {
+        if (this.validarTexto(this.monto) === -1) {
+          document.getElementById('labelMonto').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelMonto').setAttribute('class', 'hidden')
+        }
+        if (this.validarMonto(this.validarMonto) === -1) {
+          document.getElementById('labelMonto2').setAttribute('class', 'red')
+        } else {
+          document.getElementById('labelMonto2').setAttribute('class', 'hidden')
+        }
+      } else if (this.pago === 2) {
+        var titular = this.nombreTitular + ' ' + this.apellidoTitular
+        var tarjeta = { numTarjeta: this.numTarjeta, cvc: this.cvc, mesVencimiento: this.mesVto, añoVencimiento: this.añoVto, titular: titular }
+        if (validarTarjeta(tarjeta) === -1) {
+          document.getElementById('labelNumeroTarjeta').setAttribute('class', 'red')
+        } else if (validarTarjeta(tarjeta) === -2) {
+          document.getElementById('labelTarjetaInvalida').setAttribute('class', 'alert alert-danger')
+        } else {
+          document.getElementById('labelTarjetaInvalida').setAttribute('class', 'hidden')
+          document.getElementById('labelNumeroTarjeta').setAttribute('class', 'hidden')
+        }
+      }
     }
   }
 }
@@ -217,5 +304,11 @@ export default {
 .margin{
    margin-top:10px;
    margin-bottom:10px
+}
+.hidden{
+   visibility:hidden;
+}
+.red{
+   color:red;
 }
 </style>
