@@ -83,6 +83,6 @@ export default {
   }
   .button-panel button:hover {
     top: -1rem;
-    background-color: #3577bd;
+    background-color: #4EA8DE;
   }
 </style>
