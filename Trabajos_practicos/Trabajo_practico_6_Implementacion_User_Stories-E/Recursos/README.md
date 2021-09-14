@@ -31,3 +31,8 @@ Recursos: <br />
 [Bootstrap](https://getbootstrap.com/)<br />
 [EsLint](https://eslint.org/docs/rules/)<br />
 [Vue.js Style Guide](https://vuejs.org/v2/style-guide/)
+
+Guías de estilos de javascript:
+[Google Javascript guide](https://google.github.io/styleguide/javascriptguide.xml)
+[W3 javascript best practices](https://www.w3.org/wiki/JavaScript_best_practices)
+[Artículo best practices](https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399)
