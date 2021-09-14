@@ -30,9 +30,9 @@ Ejecutar el siguiente comando parado sobre la carpeta raíz del proyecto a la al
 Recursos: <br />
 [Bootstrap](https://getbootstrap.com/)<br />
 [EsLint](https://eslint.org/docs/rules/)<br />
-[Vue.js Style Guide](https://vuejs.org/v2/style-guide/)
+[Vue.js Style Guide](https://vuejs.org/v2/style-guide/) <br />
 
 Guías de estilos de javascript:
-[Google Javascript guide](https://google.github.io/styleguide/javascriptguide.xml)
-[W3 javascript best practices](https://www.w3.org/wiki/JavaScript_best_practices)
+[Google Javascript guide](https://google.github.io/styleguide/javascriptguide.xml) <br />
+[W3 javascript best practices](https://www.w3.org/wiki/JavaScript_best_practices) <br />
 [Artículo best practices](https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399)
