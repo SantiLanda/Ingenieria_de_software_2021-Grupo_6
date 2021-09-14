@@ -142,8 +142,8 @@
               <div class="alert alert-danger hidden" id="labelTarjetaInvalida" >Ingrese una tarjeta valida</div>
             </div>
             <div class="row">
-              <div class="col-sm-2 offset-sm-4"><button id="botonconfirmacion"  class="btn btn-primary btn-conf" style="margin:0 auto; display:block" @click="nextPantalla()">Confirmar</button></div>
-              <div class="col-sm-2"><a href="#divdireccion" type="button" class="btn btn-primary boton btn-conf">Subir</a></div>
+              <div class="col-sm-2 offset-sm-4"><a href="#divdireccion" type="button" class="btn btn-primary boton btn-conf">Subir</a></div>
+              <div class="col-sm-2"><button id="botonconfirmacion"  class="btn btn-primary btn-conf" style="margin:0 auto; display:block" @click="nextPantalla()">Confirmar</button></div>
             </div>
             <br>
         </div>
@@ -167,7 +167,7 @@
                   <tbody>
                     <tr v-for="(item, id) in this.carro.items" :key="id">
                       <td>{{ item.producto }}</td>
-                      <td>{{ item.precio }}</td>
+                      <td>${{ item.precio }}</td>
                       <td>{{ item.cantidad }}</td>
                     </tr>
                   </tbody>
@@ -322,7 +322,7 @@ export default {
         } else {
           document.getElementById('labelCalle').setAttribute('class', 'hidden')
         }
-        if (this.validarTexto(this.numero) === -1) {
+        if (this.numero === '') {
           document.getElementById('labelNumero').setAttribute('class', 'red')
           valido = false
         } else {
@@ -368,7 +368,7 @@ export default {
           } else {
             document.getElementById('labelCvc').setAttribute('class', 'hidden')
           }
-          if (this.validarTexto(this.añoVto) === -1 || this.validarTexto(this.mesVto) === -1) {
+          if (this.añoVto === '' || this.mesVto === '') {
             document.getElementById('labelVto').setAttribute('class', 'red')
             valido = false
           } else {
