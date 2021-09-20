@@ -36,7 +36,7 @@ Objetivo:
 
 Las user stories incluidas permiten validar la idea de negocio en el mercado, focalizando en la funcionalidad que pone en contacto a Pasajeros con Taxistas. Si bien los taxistas deben poder iniciar sesión para vincularlos con los datos de su vehículo, el análogo para el pasajero no es requisito para poder realizar un pedido. La funcionalidad relacionada con la gestión de taxis por parte de la central no aporta el valor significativo para la validación del mercado por lo que se dejará para futuras iteraciones.
 
-![MVP](/Screens/mvp.png)
+![MVP](Trabajos_practicos/Trabajo_practico_8_Scrum_Release_And_Sprint_Planning-E/Recursos/mvp.png)
 
 # Stories
 
