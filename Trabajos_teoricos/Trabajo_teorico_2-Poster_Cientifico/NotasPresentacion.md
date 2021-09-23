@@ -24,15 +24,15 @@ La definición de hecho (Definition of Done; DoD) debe ser única para todo el p
 
 # LeSS Sprint
 
-A nivel de producto, todos los equipos comparten un sprint en el sentido de que cada equipo comienza y termina el Sprint al mismo tiempo. De esta manera los resultados de un Sprint convergen en un producto completamente integrado, se adquiere un incremento potencialmente distribuible.
+A nivel de producto, todos los equipos comparten un sprint en el sentido de que comienzan y terminan el Sprint al mismo tiempo. De esta manera los resultados de un Sprint convergen en un producto completamente integrado, se adquiere un incremento potencialmente distribuible.
 
 ·La Sprint Planning consiste en dos etapas:
 
-oSprint Planning One → Evento compartido corto dirigido por el Product Owner y el equipo donde cada equipo selecciona elementos del product backlog de manera tentativa.
+oSprint Planning One → Evento compartido corto dirigido por el Product Owner donde cada equipo selecciona elementos del product backlog de manera tentativa.
 
-oSprint Planning Two → Usualmente se realiza separada para cada equipo, a menos que los ítems estén muy relacionados entre ciertos equipos, lo que se procede a integrarlos. Los equipos discuten estrategias para desarrollarlos, esto usualmente implica el diseño y la creación de sus Sprint Backlogs. Cada equipo tiene su propio Sprint Backlog y daily scrum
+oSprint Planning Two → Usualmente separada para cada equipo, a menos que los ítems estén muy relacionados, en cuyo caso se colabora e integra. Los equipos discuten estrategias para desarrollarlos, esto usualmente implica el diseño y la creación de sus propios Sprint Backlogs.
 
-·Equipos son auto coordinados y responsables de coordinación con otros equipos, no se asignan coordinadores para ellos.
+·Equipos son auto coordinados y responsables de coordinación con otros equipos con las daily scrums, no se asignan coordinadores para ellos.
 
 Se enfatizan redes informales y descentralizadas por sobre una estructura rígida.
 
