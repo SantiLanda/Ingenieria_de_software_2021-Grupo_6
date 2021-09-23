@@ -1,4 +1,4 @@
-![Presentacion_LeSS_Grupo6](Presentacion_LeSS_Grupo6.png)
+![2021_4K1_Grupo06_Poster_Cientifico](2021_4K1_Grupo06_Poster_Cientifico.png)
 
 # Presentación de framework LeSS
 
