@@ -6,7 +6,7 @@
 - [ ] Definir plan de release para MVP
 - [ ] Minuta de planificación del sprint (para sprint 1 y sprint backlog)
 - [x] Desagregar user stories para sprint backlog en tareas estimadas en horas ideales
-  - [ ] Definir cantidad de horas necesarias para cada actividad
+- [ ] Definir cantidad de horas necesarias para cada actividad
 - [ ] Definir cantidad de sprints y user stories para cada uno
 
 Decidimos tomar como capacidad del equipo en horas ideales un valor de 16 horas considerando que trabajamos media jornada

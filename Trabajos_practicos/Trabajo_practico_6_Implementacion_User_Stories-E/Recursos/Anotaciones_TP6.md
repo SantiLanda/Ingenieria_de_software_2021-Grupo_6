@@ -21,3 +21,18 @@
 - [X] Iconos y Paleta de Colores
 - [X] Calcular precio total carrito
 - [X] Agregar Fors de Funciones de validacion de tarjetas
+
+Anotaciones de Clases
+- diseño libre del logo dentro del estandar de colores.
+- No hay extra por pago con tarjeta
+- prioridad de colores queda en nosotros, dentro de los permitidos
+- letras verdes: su orden fue registrada con exito, icono de check, abajo muestra detalle de pedido
+- letra en rojo para errores o mensajes de error
+- carrito no es necesario de visualizar en todo momento
+- cvc puede mostrarse tranquilamente
+- dejar elegir solo fechas validas es correcto
+- comprobacion por digitos de tarjetas basta
+- numero menor al total no me deja pagar, siosi igual al total o mayor
+- ciudades: Cordoba, rio primero, carlos paz
+- Cuando confirmo se debe mostrar resumen de lo que estoy confirmando
+- checkout una sola pantalla donde ingrese todos los datos y datos de pago
