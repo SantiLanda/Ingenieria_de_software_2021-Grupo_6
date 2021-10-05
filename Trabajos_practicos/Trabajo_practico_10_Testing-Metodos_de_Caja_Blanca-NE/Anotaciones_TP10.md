@@ -39,7 +39,7 @@ Una sentencia es cualquier instrucción que no sea una estructura de control.
 El objetivo de este método es darle cobertura a todas las sentencias, vamos a buscar la cantidad mínima de casos de prueba qué nos permiten pasar ejecutar o recorrer todas las sentencias. 
 
     IF (A>0 $$ C==1)
-        X = X \+ 1
+        X = X + 1
     IF (B==3 || D < 0)
         Y=0  
     END
@@ -52,7 +52,7 @@ Lo que va a buscar la cobertura de decisión es cubrir todas las decisiones y qu
 Una decisión constituye toda la estructura de control completa y no cada condición lógica en particular, es decir involucra todo lo que esté entre paréntesis.
 
     IF (A>0 $$ C==1)
-        X = X \+ 1
+        X = X + 1
     IF (B==3 || D < 0)
         Y=0  
     END
@@ -67,7 +67,7 @@ En este caso creo que se trata de evaluar todas las decisiones de su valor verda
 Prácticamente no es distinto al anterior. Solo hay que ser más cuidadoso con la selección de valores.
 
     IF (A>0 $$ C==1)
-        X = X \+ 1
+        X = X + 1
     IF (B==3 || D < 0)
         Y=0  
     END
@@ -80,8 +80,10 @@ Un switch tiene un camino por cada uno de los case.
 La cobertura múltiple busca valuar el combinatorio de todas las condiciones en todos los valores de verdad posibles detnro de las decisiones. 
 Hay casos de prueba que pueden ser imposibles por su semántica y en esos casos se descarta el caso de prueba.
 
+También pueden existir IFs anidados que no necesariamente se van a sumar a la cantidad de casos de prueba a diseñar sino que pueden estar ya incluidos en otros casos de prueba.
+
     IF (A>0 $$ C==1)
-        X = X \+ 1
+        X = X + 1
     IF (B==3 || D < 0)
         Y=0  
     END
@@ -89,7 +91,7 @@ Hay casos de prueba que pueden ser imposibles por su semántica y en esos casos 
 Este caso solo se necesitan 4 casos de prueba y para saber esto se arman las tablas de verdad con las condiciones de dentro de los rombos \(o IFs\).
 
 
-### Casos de Pruba
+### Casos de Prueba
 Se usa la plantilla y se escriben los pasos bien detalladamente
 
 ## [Video 3](https://www.youtube.com/watch?v=wLFSbA537YI)
