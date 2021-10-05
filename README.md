@@ -19,11 +19,14 @@
 	- Trabajo_practico_4_SCM_HerramientasSCM-E
 	- Trabajo_practico_5_Uso_del_Repositorio-E
 	- Trabajo_practico_6_Implementacion_User_Stories-E
+		- Recursos
 		- Nota: la estructura de esta carpeta estará sujeta a la tecnología elegida y cómo se realice la implementación
 	- Trabajo_practico_7_Scrum_Roles_y_Ciclo_de_Vida-E
 	- Trabajo_practico_8_Scrum_Release_And_Sprint_Planning-E
+		- Recursos
 	- Trabajo_practico_9_Testing-Metodos_de_Caja_Negra-NE
 	- Trabajo_practico_10_Testing-Metodos_de_Caja_Blanca-NE
+		- Recursos
 	- Trabajo_practico_11_Testing-Metodos_de_Caja_Negra-NE
 	- Trabajo_practico_12_Testing-Ejecucion_de_Casos_de_Prueba-E 
 	- Trabajo_practico_13_Design_Thinking-E
@@ -34,18 +37,28 @@
 - Material_Clases
 	- Presentaciones
 	- Notas
+- Reglas_de_Juego
 - README (md)
 
 ## Listado de ítems de Configuración
 
 | Nombre del ítem de Configuración     | Regla de Nombrado | Ubicación Física     |
 |     :----:       		       |    :----:         |       :----:         |
-|    Documentos de Trabajos Prácticos preliminares  | Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6_P.doc  | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>   |
-| Documento final de trabajos prácticos   |     Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6.pdf    | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>     |
-| Notas de cambios pendientes del trabajo | Anotaciones_TP\<NumeroTrabajoPractico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\> |
-|Documento final de trabajos teóricos | \<aaaa\>_4K\<n\>_Grupo\<nn\>_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>| 
-|Notas de clases| \<aaaa\>-\<mm\>-\<dd\>_\<Nombre\>.[jpg/txt/md/doc]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_clases/Notas| 
-|Presentaciones de clases | \<aaaa\>-\<mm\>-\<dd\>_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Presentaciones|
+|    Documentos de Trabajos Prácticos | Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6.\<ExtensionDocumento\>  | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>   |
+| Documentos de Trabajos Prácticos corregidos por los profesores   |     Trabajo_practico_Corregido_\<NumeroTrabajoPractico\>_Grupo6.\<ExtensionDocumento\>    | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>     |
+| Notas de cambios pendientes del trabajo y recursos, aclaraciones de los profes e información utilizados para el trabajo practico | Anotaciones_TP\<NumeroTrabajoPractico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\> |
+| Notas de cambios pendientes del trabajo y recursos, aclaraciones de los profes e información utilizados para el trabajo teórico | Anotaciones_TT\<NumeroTrabajoTeorico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>|
+|Documento final de trabajos teóricos | \<aaaa\>\_4K\<n\>\_Grupo\<nn\>_\<Tema_abordado\>.\<ExtensionDocumento\> | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>| 
+|Notas de clases| \<aaaa\>-\<mm\>-\<dd\>_\<Nombre\>.\[jpg/txt/md/doc\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_clases/Notas| 
+|Presentaciones de clases | \<aaaa\>_\<Cuatrimestre\>\_\<NumeroOrdenPresentaciones\>\_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Presentaciones|
+|Notas sobre aclaraciones de los trabajos prácticos | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>|
+|Notas con recursos, aclaraciones de los profes e información utilizados para el trabajo teórico  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\>|
+|Notas resumidas del Plan de Configuración de Software y notas sobre el repositorio  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/|
+|Enunciados de Trabajos Prácticos  | ISW_EnunciadosTPs_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
+|Guía de Trabajos Prácticos Resueltos  | ISW_GuiaTPs_Resueltos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
+|Enunciados Trabajos Teóricos  | ISW_Lineamientos_TrabajosTeoricos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/|
+|Diagramas  | TP\<NumeroTrabajoPractico\>_\<DescripcionCortaDiagrama\>.\[jpeg/jpg/png/pdf/svg\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\>/Recursos|
+
 
 |Sigla  | Significado	|
 |:----: | :----:|
@@ -66,7 +79,12 @@
 |\<n\> | Número del curso con 1 dígito, como 1, 2, 3 o 4 |
 |\<nn\> | Número del Grupo con 2 dígitos, como 02 |
 |\<Tema_abordado\> | Nombre del tema reemplazando espacios con "\_", como "No_Silver_Bullet"|
+|\<Cuatrimestre\> | Indica “1erCuat”, “1C”, “2doCuat” o “2C” según cuatrimestre que haya cursado la materia|
+|\<ExtensionDocumento\> | Puede ser doc, docx, pdf, png, jpeg, jpg o xlsx|
+|\<DescripcionCortaDiagrama\> | Qué tipo de diagrama se está mostrando|
+|\<NumeroOrdenPresentaciones\> | En formato XX con 0<=X<=9 e indica el orden de las presentaciones según el orden en qué se de en clase |
+
 
 
 ## Regla para determinar la linea Base
-Realizaremos un merge a la rama Main cada vez que los trabajos prácticos se encuentren ya corregidos o evaluados por los profesores
+●	Crearemos un nuevo tag cada vez que los trabajos prácticos se encuentren ya corregidos o evaluados por los profesores.
