@@ -37,6 +37,7 @@
 - Material_Clases
 	- Presentaciones
 	- Notas
+	- ClasesGrabadas
 - Reglas_de_Juego
 - README (md)
 
@@ -58,6 +59,8 @@
 |Guía de Trabajos Prácticos Resueltos  | ISW_GuiaTPs_Resueltos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
 |Enunciados Trabajos Teóricos  | ISW_Lineamientos_TrabajosTeoricos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/|
 |Diagramas  | TP\<NumeroTrabajoPractico\>_\<DescripcionCortaDiagrama\>.\[jpeg/jpg/png/pdf/svg\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\>/Recursos|
+|Archivo de Acceso a clases grabadas| Clases_\<EtapaMateria> |https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/ClasesGrabadas|
+
 
 
 |Sigla  | Significado	|
@@ -83,6 +86,7 @@
 |\<ExtensionDocumento\> | Puede ser doc, docx, pdf, png, jpeg, jpg o xlsx|
 |\<DescripcionCortaDiagrama\> | Qué tipo de diagrama se está mostrando|
 |\<NumeroOrdenPresentaciones\> | En formato XX con 0<=X<=9 e indica el orden de las presentaciones según el orden en qué se de en clase |
+|\<EtapaMateria\>|Refiere al momento en el cursado de la materia a las que las clases refieren (1er parcial, 2do Parcial o ExamenFinal)|
 
 
 
