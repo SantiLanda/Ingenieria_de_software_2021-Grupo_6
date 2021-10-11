@@ -8,10 +8,10 @@
 - [Testing - Práctico de Caja Blanca Parte 2](https://youtu.be/Q7YP2x3DsSg)
 - [Testing - Práctico de Caja Blanca Parte 3](https://youtu.be/wLFSbA537YI)
 - [Testing - Práctico de Caja Blanca Parte 4](https://youtu.be/mXBI1Fv6V-M)
-- [Filosofía Lean y Kanban](https://www.youtube.com/watch?v=WhXe_jnZ0I0)
-- [Ejecución de caja negra](https://youtu.be/WhXe_jnZ0I0)
 - [Aseguramiento de la calidad](https://youtu.be/GC0HejFmA5w)
 - [CMMI y Auditorías](https://youtu.be/SUOfdl3Xew0)
+- [Filosofía Lean y Kanban](https://www.youtube.com/watch?v=WhXe_jnZ0I0)
+- Ejecución de caja negra
 - Clase ejecucion caja negra
 - Métricas tradicionales, Lean y Agile
 - Práctico de Caja Negro y Caja Blanca
