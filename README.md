@@ -38,6 +38,7 @@
 	- Presentaciones
 	- Notas
 	- ClasesGrabadas
+	- Resumenes
 - Reglas_de_Juego
 - README (md)
 
@@ -60,7 +61,7 @@
 |Enunciados Trabajos Teóricos  | ISW_Lineamientos_TrabajosTeoricos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/|
 |Diagramas  | TP\<NumeroTrabajoPractico\>_\<DescripcionCortaDiagrama\>.\[jpeg/jpg/png/pdf/svg\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\>/Recursos|
 |Archivo de Acceso a clases grabadas| Clases_\<EtapaMateria> |https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/ClasesGrabadas|
-
+|Resúmenes Teóricos o Mapas Conceptuales para estudiar|<EtapaMateria>\_Resumen_<NumeroResumen>_<Autor>.pdf/.docx/.doc/.png/.jpg/.jpeg | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Resumenes|
 
 
 |Sigla  | Significado	|
@@ -87,7 +88,8 @@
 |\<DescripcionCortaDiagrama\> | Qué tipo de diagrama se está mostrando|
 |\<NumeroOrdenPresentaciones\> | En formato XX con 0<=X<=9 e indica el orden de las presentaciones según el orden en qué se de en clase |
 |\<EtapaMateria\>|Refiere al momento en el cursado de la materia a las que las clases refieren (1er parcial, 2do Parcial o ExamenFinal)|
-
+| <Autor> | 	Nombre del Autor del Archivo (Puede ser en siglas como “FPF” o abreviaciones como “FacuPF”)|
+| <NumeroResumen>	|Número de Orden del resumen o Puede indicar el número de Unidad que abarca (como “U1”)  |
 
 
 ## Regla para determinar la linea Base
