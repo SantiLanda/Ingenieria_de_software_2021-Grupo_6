@@ -15,10 +15,13 @@
 - [Métricas tradicionales, Lean y Agile](https://www.youtube.com/watch?v=BY77nGz3S0c)
 - [Práctico de Caja Negra y Caja Blanca](https://www.youtube.com/watch?v=1Fr6tYnt3e4)
 
-# Los temas que van al parcial son:
+# Los temas que van al parcial teórico son:
 - Testing
 - Lean - Kanban
 - Métricas tradicionales, Lean y Agile
 - Auditorías
 - Aseguramiento de la calidad y CMMI
 
+# Los temas que van al parcial Práctico son:
+- Testing Caja Negra
+- Testing Caja Blanca
