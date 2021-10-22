@@ -1,5 +1,8 @@
 # Se listan las clases y temas vistos en la segunda etapa de la materia (y sus links)
 - Framework para escalar Scrum: LeSS y Nexus \(clase invertida\)
+- [Testing de Software Parte 1](https://youtu.be/AuHUKtut7eo)
+- [Testing de Software Parte 2](https://youtu.be/4SFstHKhEqM)
+- [Testing de Software Parte 3](https://youtu.be/9H_jm2y233w)
 - [Overview de Testing - Testing ágil en contexto](https://www.youtube.com/watch?v=hKoJBlhxuN8)
 - [Testing - Práctico de Caja Negra Parte 1](https://youtu.be/Zuc1VNO-wB8)
 - [Testing - Práctico de Caja Negra Parte 2](https://youtu.be/p78VFLY5wWE)
