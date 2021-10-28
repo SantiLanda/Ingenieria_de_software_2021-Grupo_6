@@ -88,8 +88,8 @@
 |\<DescripcionCortaDiagrama\> | Qué tipo de diagrama se está mostrando|
 |\<NumeroOrdenPresentaciones\> | En formato XX con 0<=X<=9 e indica el orden de las presentaciones según el orden en qué se de en clase |
 |\<EtapaMateria\>|Refiere al momento en el cursado de la materia a las que las clases refieren (1er parcial, 2do Parcial o ExamenFinal)|
-| <Autor> | 	Nombre del Autor del Archivo (Puede ser en siglas como “FPF” o abreviaciones como “FacuPF”)|
-| <NumeroResumen>	|Número de Orden del resumen o Puede indicar el número de Unidad que abarca (como “U1”)  |
+| \<Autor> | 	Nombre del Autor del Archivo (Puede ser en siglas como “FPF” o abreviaciones como “FacuPF”)|
+| \<NumeroResumen>	|Número de Orden del resumen o Puede indicar el número de Unidad que abarca (como “U1”)  |
 
 
 ## Regla para determinar la linea Base
