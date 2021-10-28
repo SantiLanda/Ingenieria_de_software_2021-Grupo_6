@@ -61,7 +61,7 @@
 |Enunciados Trabajos Teóricos  | ISW_Lineamientos_TrabajosTeoricos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/|
 |Diagramas  | TP\<NumeroTrabajoPractico\>_\<DescripcionCortaDiagrama\>.\[jpeg/jpg/png/pdf/svg\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\>/Recursos|
 |Archivo de Acceso a clases grabadas| Clases_\<EtapaMateria> |https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/ClasesGrabadas|
-|Resúmenes Teóricos o Mapas Conceptuales para estudiar|<EtapaMateria>\_Resumen_<NumeroResumen>_<Autor>.pdf/.docx/.doc/.png/.jpg/.jpeg | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Resumenes|
+|Resúmenes Teóricos o Mapas Conceptuales para estudiar|\<EtapaMateria>\_Resumen_\<NumeroResumen>_\<Autor>.pdf/.docx/.doc/.png/.jpg/.jpeg | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Resumenes|
 
 
 |Sigla  | Significado	|
