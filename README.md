@@ -39,6 +39,7 @@
 	- Notas
 	- ClasesGrabadas
 	- Resumenes
+	- MaterialBibliografico
 - Reglas_de_Juego
 - README (md)
 
@@ -49,20 +50,20 @@
 |    Documentos de Trabajos Prácticos | Trabajo_practico_\<NumeroTrabajoPractico\>_Grupo6.\<ExtensionDocumento\>  | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>   |
 | Documentos de Trabajos Prácticos corregidos por los profesores   |     Trabajo_practico_Corregido_\<NumeroTrabajoPractico\>_Grupo6.\<ExtensionDocumento\>    | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>     |
 | Notas de cambios pendientes del trabajo y recursos, aclaraciones de los profes e información utilizados para el trabajo practico | Anotaciones_TP\<NumeroTrabajoPractico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\> |
-| Notas de cambios pendientes del trabajo y recursos, aclaraciones de los profes e información utilizados para el trabajo teórico | Anotaciones_TT\<NumeroTrabajoTeorico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>|
+| Notas de cambios pendientes del trabajo, aclaraciones de los profes e información utilizados para el trabajo teórico | Anotaciones_TT\<NumeroTrabajoTeorico\>.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>|
 |Documento final de trabajos teóricos | \<aaaa\>\_4K\<n\>\_Grupo\<nn\>_\<Tema_abordado\>.\<ExtensionDocumento\> | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>| 
 |Notas de clases| \<aaaa\>-\<mm\>-\<dd\>_\<Nombre\>.\[jpg/txt/md/doc\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_clases/Notas| 
 |Presentaciones de clases | \<aaaa\>_\<Cuatrimestre\>\_\<NumeroOrdenPresentaciones\>\_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Presentaciones|
 |Notas sobre aclaraciones de los trabajos prácticos | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>|
-|Notas con recursos, aclaraciones de los profes e información utilizados para el trabajo teórico  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\>|
-|Notas resumidas del Plan de Configuración de Software y notas sobre el repositorio  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/|
+|Notas con recursos e información extra sobre el trabajo teórico   | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\>|
+|Notas resumidas del Plan de Configuración de Software y sobre el repositorio  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/|
 |Enunciados de Trabajos Prácticos  | ISW_EnunciadosTPs_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
 |Guía de Trabajos Prácticos Resueltos  | ISW_GuiaTPs_Resueltos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
 |Enunciados Trabajos Teóricos  | ISW_Lineamientos_TrabajosTeoricos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/|
 |Diagramas  | TP\<NumeroTrabajoPractico\>_\<DescripcionCortaDiagrama\>.\[jpeg/jpg/png/pdf/svg\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoPractico\>/Recursos|
 |Archivo de Acceso a clases grabadas| Clases_\<EtapaMateria>.md |https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/ClasesGrabadas|
 |Resúmenes Teóricos o Mapas Conceptuales para estudiar|\<EtapaMateria>\_Resumen_\<NumeroResumen>_\<Autor>.pdf/.docx/.doc/.png/.jpg/.jpeg | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Resumenes|
-
+|Material Bibliográfico |	\<TítuloDelLibro>\_\<AutorLibro>.[pdf/epub] | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/MaterialBibliografico |
 
 |Sigla  | Significado	|
 |:----: | :----:|
@@ -88,9 +89,10 @@
 |\<DescripcionCortaDiagrama\> | Qué tipo de diagrama se está mostrando|
 |\<NumeroOrdenPresentaciones\> | En formato XX con 0<=X<=9 e indica el orden de las presentaciones según el orden en qué se de en clase |
 |\<EtapaMateria\>|Refiere al momento en el cursado de la materia a las que las clases refieren (1er parcial, 2do Parcial o ExamenFinal)|
-| \<Autor> | 	Nombre del Autor del Archivo (Puede ser en siglas como “FPF” o abreviaciones como “FacuPF”)|
-| \<NumeroResumen>	|Número de Orden del resumen o Puede indicar el número de Unidad que abarca (como “U1”)  |
-
+|\<Autor> | 	Nombre del Autor del Archivo (Puede ser en siglas como “FPF” o abreviaciones como “FacuPF”)|
+|\<NumeroResumen>	|Número de Orden del resumen o Puede indicar el número de Unidad que abarca (como “U1”)  |
+|\<TítuloDelLibro> |	Separado por “-”, es el título del libro|
+|\<AutorLibro>	| Nombre del autor como “ErichGamma” |
 
 ## Regla para determinar la linea Base
-●	Crearemos un nuevo tag cada vez que los trabajos prácticos se encuentren ya corregidos o evaluados por los profesores.
+●	Crearemos un nuevo tag cada vez que los trabajos prácticos se encuentren ya corregidos y/o evaluados por los profesores.
