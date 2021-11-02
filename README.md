@@ -30,6 +30,7 @@
 	- Trabajo_practico_11_Testing-Metodos_de_Caja_Negra-NE
 	- Trabajo_practico_12_Testing-Ejecucion_de_Casos_de_Prueba-E 
 	- Trabajo_practico_13_Design_Thinking-E
+	- Trabajo_practico_14_Retrospective-E
 - Trabajos_teoricos
 	- Trabajo_teorico_1-Clase_Invertida
 	- Trabajo_teorico_2-Poster_Científico
