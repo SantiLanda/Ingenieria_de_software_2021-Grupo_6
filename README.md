@@ -56,8 +56,6 @@
 |Documento final de trabajos teóricos | \<aaaa\>\_4K\<n\>\_Grupo\<nn\>_\<Tema_abordado\>.\<ExtensionDocumento\> | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeorico\>| 
 |Notas de clases| \<aaaa\>-\<mm\>-\<dd\>_\<Nombre\>.\[jpg/txt/md/doc\]| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_clases/Notas| 
 |Presentaciones de clases | \<aaaa\>_\<Cuatrimestre\>\_\<NumeroOrdenPresentaciones\>\_\<Tema_abordado\>.pdf | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Material_Clases/Presentaciones|
-|Notas sobre aclaraciones de los trabajos prácticos | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/<DirectorioDeTrabajoPractico\>|
-|Notas con recursos e información extra sobre el trabajo teórico   | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_teoricos/<DirectorioDeTrabajoTeoricos\>|
 |Notas resumidas del Plan de Configuración de Software y sobre el repositorio  | README.md | https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/|
 |Enunciados de Trabajos Prácticos  | ISW_EnunciadosTPs_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
 |Guía de Trabajos Prácticos Resueltos  | ISW_GuiaTPs_Resueltos_\<aaaa\>_\<Cuatrimestre\>.pdf| https://github.com/SantiLanda/Ingenieria_de_software_2021-Grupo_6/Trabajos_practicos/|
